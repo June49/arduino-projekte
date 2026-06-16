@@ -1,27 +1,35 @@
-# arduino-projekte
-# RFID Zugangssystem
+# Arduino Projekte
 
-## Beschreibung
-Zugangskontrollsystem mit Arduino UNO und RC522 RFID-Sensor.
-Autorisierte Karten leuchten grün, unbekannte Karten rot.
+Sammlung von Embedded-Systems Projekten im Rahmen meines Studiums der Elektro- und Informationstechnik.
 
-## Komponenten
-- Arduino UNO
-- RC522 RFID-Sensor
-- Grüne LED + 220Ω Widerstand
-- Rote LED + 220Ω Widerstand
+## Projekte
 
-## Kommunikationsprotokoll
-SPI (Serial Peripheral Interface)
+### 🔴 RFID Zugangssystem
+Zugangskontrollsystem mit RC522 RFID-Sensor. Autorisierte Karten leuchten grün, unbekannte rot.
+**Konzepte:** SPI-Kommunikation, Array-Vergleich, UID-Verarbeitung
 
-## Funktionsweise
-1. RC522 sendet elektromagnetisches Feld
-2. RFID-Karte antwortet mit ihrer UID
-3. Arduino vergleicht UID mit autorisierter UID
-4. Grüne LED = Zugang erlaubt / Rote LED = verweigert
+### 📏 Ultraschall Distanzmesser mit LCD
+Misst Entfernungen mit HC-SR04 und zeigt sie auf LCD1602 Display an.
+**Konzepte:** pulseIn(), Zeit-zu-Distanz Berechnung, LCD-Ansteuerung
 
-## Was ich gelernt habe
-- SPI Kommunikationsprotokoll
-- RFID Technologie
-- UID Vergleich mit Arrays
-- Zugangskontrolllogik
+### 💡 LED Lauflicht mit Taster
+5 LEDs leuchten nacheinander, Taster startet/stoppt das Lauflicht.
+**Konzepte:** Arrays, for-Schleifen, INPUT_PULLUP, Zustandsverwaltung
+
+### 🌡️ DHT11 Sensor
+Liest Temperatur und Luftfeuchtigkeit aus und zeigt sie im Serial Monitor an.
+**Konzepte:** Sensor-Libraries, Fehlerbehandlung mit isnan()
+
+### 🔘 Taster-LED
+LED wird durch Tasterdruck gesteuert.
+**Konzepte:** digitalRead(), INPUT_PULLUP, active-low Logik
+
+### ✨ LED-Blink
+Erstes Projekt — eingebaute LED blinken lassen.
+**Konzepte:** digitalWrite(), delay(), Grundlagen von setup()/loop()
+
+## Hardware
+ELEGOO UNO R3 Starter Kit
+
+## Technologien
+C/C++, Arduino IDE, Git/GitHub
