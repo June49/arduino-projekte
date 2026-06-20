@@ -12,7 +12,7 @@ Erkennt Bewegungen im Raum und löst einen Alarm aus — LED leuchtet und Buzzer
 ## Funktionsweise
 1. PIR-Sensor erkennt Infrarotstrahlung (Körperwärme)
 2. Bei Bewegung → OUT-Pin wird HIGH
-3. LED leuchtet und Buzzer piept für 3 Sekunden
+3. LED leuchtet und Buzzer piept solange Bewegung erkannt wird
 4. Danach wartet das System auf die nächste Bewegung
 
 ## Was ich gelernt habe
