@@ -1,7 +1,7 @@
 # Einparkhilfe
 
 ## Beschreibung
-Simuliert einen Einparksensor — je näher ein Objekt, desto mehr LEDs leuchten und desto schneller piept der Buzzer.
+Simuliert einen Einparksensor. Je näher ein Objekt, desto mehr LEDs leuchten und desto schneller piept der Buzzer.
 
 ## Komponenten
 - Arduino UNO
