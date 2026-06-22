@@ -22,6 +22,8 @@ void loop() {
   digitalWrite(trigPin, HIGH);
   delayMicroseconds(10);
 
+  digitalWrite(trigPin, LOW);
+
   dauer = pulseIn(echoPin, HIGH);
   
   entfernung = dauer * 0.034 / 2;
